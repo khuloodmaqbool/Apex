@@ -1,0 +1,101 @@
+        /* Packages Styling  */
+
+        .packages .pkg {
+            border-radius: 15px;
+            background: #ffffff;
+            box-shadow: 20px 20px 60px #f2f2f2,
+                -20px -20px 60px #ffffff;
+            padding: 30px;
+            height: 580px;
+            border: none;
+        }
+
+        .packages h2 {
+            font-size: 40px;
+        }
+
+        .packages button {
+            border-radius: 20px;
+        }
+
+        .packages .card2 {
+            position: relative;
+            top: -40px;
+        }
+
+        .packages .card {
+            margin: 20px;
+        }
+
+        .outlineheading {
+            font-family: "Kumbh Sans", sans-serif;
+            font-size: 90px;
+            position: relative;
+            bottom: -50px;
+            z-index: -1;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 2px rgb(208, 208, 208, 0.2);
+        }
+
+
+
+        @media only screen and (max-device-width: 992px) {
+            .packages .card2 {
+                position: relative;
+                top: 0px;
+            }
+
+            .outlineheading {
+                font-size: 70px;
+            }
+        }
+
+        @media only screen and (max-width: 767.5px) {
+
+            .packages h2,
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 15px;
+            }
+
+            .packages .pkg {
+                height: 480px;
+            }
+
+            .outlineheading {
+                font-size: 60px;
+                bottom: -35px;
+            }
+
+            .outlineheading+h2 {
+                font-size: 30px;
+            }
+        }
+
+
+
+        @media only screen and (max-width: 575.5px) {
+            .outlineheading {
+                font-size: 40px;
+            }
+
+            .packages .pkg {
+                height: fit-content;
+            }
+        }
+
+        @media only screen and (max-width: 780px) {
+
+            h1 {
+                font-size: 25px;
+            }
+        }

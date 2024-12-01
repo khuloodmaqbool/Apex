@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Digital | Home</title>
+    <link rel="icon" type="image/x-icon" href="src/homeimg/apexfav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <style>
+        .servicesec .services {
+            background: #ffffff;
+            box-shadow: 20px 20px 60px #f2f2f2,
+                -20px -20px 60px #ffffff;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 10px 15px 10px;
+            margin: 15px;
+        }
+
+        .servicesec .service2 {
+            position: relative;
+            left: 110px;
+        }
+
+        .servicesec .service3 {
+            position: relative;
+            left: 140px;
+        }
+
+        .servicesec .service4 {
+            position: relative;
+            right: -100px;
+        }
+
+        @media only screen and (max-width: 1171px) {
+
+            .servicesec .service2,
+            .servicesec .service3,
+            .servicesec .service4 {
+                left: 0px;
+                right: 0px;
+            }
+        }
+
+        /* FAQs Styling  */
+        .accordion-button {
+            background-color: white;
+            border: 1px solid #ddd;
+            color: #333;
+            font-size: 1rem;
+            transition: 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: rgb(181, 212, 6, 0.1) !important;
+            color: #333 !important;
+
+        }
+
+        .accordion-button:not(.collapsed):focus {
+            background-color: rgb(181, 212, 6, 0.1) !important;
+            border-color: #f0f0f0;
+            border: 1px solid var(--primary-color);
+
+        }
+
+        .accordion-button.collapsed {
+            background-color: #ffffff;
+            border: 1px solid rgb(244, 244, 244);
+            color: #333 !important;
+        }
+
+
+        .accordion-button:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #333;
+            background-color: #f8f9fa;
+            border-color: #ddd;
+        }
+
+        /* Services Styling  */
+        .servicesec .services {
+            background: #ffffff;
+            box-shadow: 20px 20px 60px #f2f2f2,
+                -20px -20px 60px #ffffff;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 10px 15px 10px;
+            margin: 15px;
+        }
+
+        .servicesec .service2 {
+            position: relative;
+            left: 110px;
+        }
+
+        .servicesec .service3 {
+            position: relative;
+            left: 140px;
+        }
+
+        .servicesec .service4 {
+            position: relative;
+            right: -100px;
+        }
+
+        .services .leftimg {
+            width: 90%;
+        }
+
+        .servicesec .arrowicon {
+            width: 80px;
+        }
+
+        @media only screen and (max-width: 1171px) {
+
+            .servicesec .service2,
+            .servicesec .service3,
+            .servicesec .service4 {
+                left: 0px;
+                right: 0px;
+            }
+
+        }
+
+        @media only screen and (min-width: 767px) and (max-width: 992px) {
+            .services .leftimg {
+                width: 70%;
+            }
+        }
+
+        .worksec .greyback {
+            width: 100%;
+            background-color: rgba(1, 1, 1, 0.6);
+            border: 3px solid rgb(210, 210, 210);
+            height: 100%;
+            cursor: pointer;
+            transition: 0.2s;
+            border-radius: 26px;
+        }
+
+        .worksec .greyback:hover {
+            background: none;
+
+        }
+
+        .worksec {
+
+            justify-content: space-around;
+        }
+
+
+        @media only screen and (max-width: 1200px) {
+            .worksec {
+                justify-content: center;
+            }
+        }
+
+        /* Review Styling      */
+        .reviews .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reviews .left-icons {
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .reviews .right-icons {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .reviews .icon-container img {
+            width: 60px;
+            margin: 10px;
+        }
+
+        .reviews .testimonial-container {
+            position: relative;
+            padding: 50px 0;
+        }
+
+        .reviews .left-icons img:nth-child(2) {
+            margin-left: -60px;
+            margin-top: 60px;
+        }
+
+        .reviews .left-icons img:nth-child(3) {
+            margin-top: 60px;
+        }
+
+        .reviews .right-icons img:nth-child(2) {
+            margin-right: -60px;
+            margin-top: 60px;
+        }
+
+        .reviews .right-icons img:nth-child(3) {
+            margin-top: 60px;
+        }
+
+        @media (max-width: 992px) {
+            .reviews .icon-container {
+                display: none;
+            }
+        }
+
+        .section {
+            opacity: 0;
+            transform: translateX(-50px) scale(0.95) rotate(-3deg);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .section.active {
+            opacity: 1;
+            transform: translateX(0) scale(1) rotate(0);
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .visible {
+            opacity: 1;
+        }
+
+
+        /* From Uiverse.io by bociKond */
+        
+        .loader {
+            width: 44.8px;
+            height: 44.8px;
+            color: var(--primary-color);
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(11.2px, currentColor 94%, #0000);
+        }
+
+        .loader:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: radial-gradient(10.08px at bottom right, #0000 94%, currentColor) top left,
+                radial-gradient(10.08px at bottom left, #0000 94%, currentColor) top right,
+                radial-gradient(10.08px at top right, #0000 94%, currentColor) bottom left,
+                radial-gradient(10.08px at top left, #0000 94%, currentColor) bottom right;
+            background-size: 22.4px 22.4px;
+            background-repeat: no-repeat;
+            animation: loader 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+        }
+
+        @keyframes loader {
+            33% {
+                inset: -11.2px;
+                transform: rotate(0deg);
+            }
+
+            66% {
+                inset: -11.2px;
+                transform: rotate(90deg);
+            }
+
+            100% {
+                inset: 0;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader" class="loader"></div>
+    <div id="content" style="display: none;">
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg fixed-top  rounded-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div
+                        style="width: 100px; height: 60px; background: url(src/homeimg/apexlogo.svg); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    </div>
+                </a>
+                <button style="background-color: rgb(255, 255, 255); border: none;" class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./About.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Services.html">Services</a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                What we offer
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item ddlink" href="./sub pages/webdesign.html">UI / UX
+                                        Designing</a>
+                                </li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/web development.html">Web
+                                        Development</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/graphics design.html">Graphic
+                                        Designing</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/seo.html">SEO</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/marketing.html">Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="./Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section  -->
+        <div style="margin-top: 100px;" class="herosection fade-in-section">
+            <div style="background: url(src/homeimg/cir.svg); background-repeat: no-repeat; background-position: center; background-size: contain;"
+                class="container mx-auto ">
+                <div class="content">
+                    <h1 class="fw-bold">Transform <br> Your Digital Presence</h1>
+                    <p>Welcome to Apex Digital Agency! We are here to make your business thrive <br> in the digital
+                        world.
+                    </p>
+                    <a href="#maincont"><button class="px-3 py-2 mt-4 rounded-3">Get Started</button></a>
+                </div>
+                <div class="floating-elements">
+                    <div class="circle top-left boximg icon1"> <img src="src/homeimg/i1 (1).svg" alt=""> </div>
+                    <div class="circle bottom-right boximg icon2"> <img src="src/homeimg/i4.svg" alt=""></div>
+                    <img src="src/homeimg/i2.png" alt="Logo Icon" class="floating-icon logo">
+                    <img src="src/homeimg/i3.png" alt="Chat Icon" class="floating-icon chat">
+                </div>
+            </div>
+        </div>
+
+        <!-- Effortless Section -->
+        <div id="maincont" class="container section mt-5">
+            <div class="row justify-content-around align-items-center effortless_sec">
+                <div class="col-xxl-5  col-xl-5 col-lg-6 col-md-11 col-sm-12 col-11">
+                    <h2 class="fw-bold mb-4">Easy and Effortless <br> <span style="color: var(--primary-color);">Way to
+                            Enhance</span> <br> Your Digital Presence </h2>
+                    <p>Boost your business with our expert digital solutions. From web development to digital marketing,
+                        we
+                        offer a range of services tailored to meet your needs.</p>
+                </div>
+                <div
+                    class="d-flex justify-content-center align-items-center col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-12 col-12">
+                    <img style="width: 90%;" src="src/homeimg/effortless2.svg" alt="effortlessimg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section  -->
+        <h5 class="outlineheading text-center text-white">SERVICES</h5>
+        <h2 class="text-center fw-bold">Great Features To Do Your Business <br>
+            <span style="color: var(--primary-color);">Growth & Development</span>
+        </h2>
+        <div style="background: url(src/homeimg/map\ image.svg); background-size: contain; background-repeat: no-repeat; background-position: center;"
+            class="container section services">
+            <div style="width: 100%; padding-right: 10px;"
+                class="row align-items-center justify-content-around servicesec">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-11 col-sm-12 col-12 d-flex justify-content-center">
+                    <img class="leftimg" src="pic/test5.png" alt="servicesicon"> <!-- ic1  -->
+                </div>
+                <div class="  col-xl-4 col-lg-6 col-md-9 col-sm-10 col-11">
+
+                    <div class="d-flex align-items-center justify-content-center services">
+                        <img style="width: 80px;" class="me-3" src="pic/reswd.svg" alt="webdesignicon">
+                        <div>
+                            <h6 class="mt-2 ">Web Design Service</h6>
+                            <p class="me-2 mt-2 ">Elevate your business with our expert web design services.
+                            </p>
+                        </div>
+                        <a href="./sub pages/webdesign.html"><img class="arrowicon" src="src/homeimg/arrowlink2.svg"
+                                alt="arrowicon"></a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center services service2">
+                        <img style="width: 80px;" class="me-3" src="pic/develop.png" alt="webdevelopicon">
+                        <div>
+                            <h6 class="mt-2 ">Web Development</h6>
+                            <p class="me-2 mt-2 ">Elevate your business with our expert web development services.</p>
+                        </div>
+                        <a href="./sub pages/web development.html"><img class="arrowicon"
+                                src="src/homeimg/arrowlink2.svg" alt="arrowicon"></a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center services service3">
+                        <img style="width: 80px;" class="me-3" src="pic/iconseo.png" alt="seoicon">
+                        <div>
+                            <h6 class="mt-2 ">SEO</h6>
+                            <p class="me-2 mt-2 ">Elevate your business with our expert seo services.</p>
+                        </div>
+                        <a href="./sub pages/seo.html"><img class="arrowicon" src="src/homeimg/arrowlink2.svg"
+                                alt="arrowicon"></a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center services service4">
+                        <img style="width: 80px;" class="me-3" src="pic/marketing.png" alt="marketing">
+                        <div>
+                            <h6 class="mt-2 ">Marketing</h6>
+                            <p class="me-2 mt-2 ">Elevate your business with our expert marketing services.</p>
+                        </div>
+                        <a href="./sub pages/marketing.html"><img class="arrowicon" src="src/homeimg/arrowlink2.svg"
+                                alt="arrowicon"></a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center services">
+                        <img style="width: 80px;" class="me-3" src="pic/graphicwd.svg" alt="hostingicon">
+                        <div>
+                            <h6 class="mt-2 ">Graphic Designing</h6>
+                            <p class="me-2 mt-2 ">Elevate your business with our expert hosting services.</p>
+                        </div>
+                        <a href="./sub pages/graphics design.html"><img class="arrowicon"
+                                src="src/homeimg/arrowlink2.svg" alt="arrowicon"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Section  -->
+        <div>
+            <h5 style="z-index: 1;   -webkit-text-fill-color: transparent;" class="outlineheading text-center ">WORK
+            </h5>
+            <h2 class="text-center fw-bold ">Real - World example of how we have <br> helped companies to <span
+                    style="color: var(--primary-color);"> achieve their objectives.</span></h2>
+            <div style=" border-radius: 30px; background:  linear-gradient(135deg, rgb(250, 250, 250),rgb(244, 255, 181),rgb(250, 250, 250));"
+                class="container section mt-5 pt-1 pb-5">
+                <div class="row worksec">
+
+                    <div style="margin: 20px; height: 270px; background: url(src/homeimg/designsc1.png); background-position: center; background-size: cover; background-repeat: no-repeat; border: 4px solid rgb(210, 210, 210); border-radius: 30px;"
+                        class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-7 col-8  p-0 ">
+                        <a style="text-decoration: none;"  target="_blank" href="https://www.adobe.com/creativecloud.html">
+
+                            <div style="display: grid; align-items: flex-end;" class="= greyback">
+
+                                <p class="text-white ps-3">AI - Design Solution Website</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="margin: 20px; height: 270px; background: url(src/homeimg/wrk2.png); background-position: center; background-size: cover; background-repeat: no-repeat; border: 4px solid rgb(210, 210, 210);  border-radius: 30px;"
+                        class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-7 col-8  p-0 ">
+
+                        <a style="text-decoration: none;" target="_blank" href="https://www.invisionapp.com/">
+                            <div style="display: grid; align-items: flex-end;" class="= greyback">
+
+                                <p class="text-white ps-3">AI - In Vision Website</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="margin: 20px; height: 270px; background: url(src/homeimg/designsc5.png); background-position: center; background-size: cover; background-repeat: no-repeat; border: 4px solid rgb(210, 210, 210);  border-radius: 30px;"
+                        class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-7 col-8  p-0">
+                        <a style="text-decoration: none;" target="_blank" href="https://driphydration.com/">
+                            <div style="display: grid; align-items: flex-end;" class=" greyback">
+
+                                <p class="text-white ps-3">AI - Hydration Drip Website</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: center;">
+                    <a href="Portfolio.html"><button class="px-3 py-2  mt-4 rounded-3">View Projects</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Section  -->
+
+        <section class="reviews">
+            <div style="background: url(src/homeimg/map\ image.svg); background-size: contain; background-repeat: no-repeat; background-position: center;"
+                class="container section testimonial-container position-relative ">
+                <div class="icon-container left-icons">
+                    <img src="src/homeimg/bell.png" alt="Bell Icon">
+                    <img src="src/homeimg/tick.png" alt="Tick Icon">
+                    <img src="src/homeimg/clock.png" alt="Clock Icon">
+                </div>
+                <div class="icon-container right-icons">
+                    <img src="src/homeimg/video.png" alt="Video Icon">
+                    <img src="src/homeimg/yt.png" alt="YouTube Icon">
+                    <img src="src/homeimg/msg.png" alt="Message Icon">
+                </div>
+                <h5 class="outlineheading text-center text-white">REVIEWS</h5>
+                <h2 class="text-center fw-bold">What People&#39;s Say About Our<br>
+                    <span style="color: var(--primary-color);">Support & Services</span>
+                </h2>
+
+                <div class="row justify-content-center align-items-center mt-3">
+                    <div class="col-10 col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                        <div style="border: none; box-shadow: 0px 0px 10px 0px rgb(232, 232, 232);"
+                            class="card p-4 rounded-4 m-3">
+                            <div class="card-title">
+                                <img width="80px" src="src/homeimg/reviewmsg.png" alt="">
+                            </div>
+                            <div class="card-body px-0 pb-0">"Working with Apex Digital has been a pleasure. Their UI/UX
+                                design significantly improved our website's user engagement. Our bounce rates decreased,
+                                and
+                                customer satisfaction increased."
+                                <hr>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                                <p class="mb-0">CEO & Founder</p>
+                                <img width="60px" src="src/homeimg/commentrev.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-6">
+                        <div style="border: none; box-shadow: 0px 0px 10px 0px rgb(232, 232, 232);"
+                            class="card p-4 rounded-4 m-3">
+                            <div class="card-title">
+                                <img width="80px" src="src/homeimg/reviewmsg.png" alt="">
+                            </div>
+                            <div class="card-body px-0 pb-0">"Apex Digital revamped our website, leading to a 35%
+                                increase
+                                in sales. The team's expertise in web development and marketing strategies was evident.
+                                They
+                                delivered on time and exceeded our expectations."
+                                <hr>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                                <p class="mb-0">CEO & Founder</p>
+                                <img width="60px" src="src/homeimg/commentrev.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQS Section  -->
+        <h5 class="outlineheading text-center text-white">FAQs</h5>
+        <h2 class="text-center fw-bold">Frequently Asked<span style="color: var(--primary-color);">Questions</span></h2>
+        <p class="text-center mb-5">If you&#39;re new to Genie or looking to supercharge your current stack, this
+            section will help you learn more about our platform and its features.</p>
+        <div style="background: url(src/homeimg/map\ image.svg); background-size: contain; background-repeat: no-repeat; background-position: center;"
+            class="container section">
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What services does Apex Digital Agency offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Apex Digital Agency offers a comprehensive range of digital solutions including UI/UX
+                            Design,
+                            Web Development, SEO, Marketing, and Graphic Designing. Our goal is to provide end-to-end
+                            digital solutions that cater to all your business needs.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What is UI/UX design and why is it important?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            UI (User Interface) and UX (User Experience) design involve creating visually appealing and
+                            user-friendly websites or apps. This process ensures that users have a seamless and
+                            enjoyable
+                            experience, which enhances user satisfaction, engagement, and retention, ultimately
+                            contributing
+                            to the success of your digital products.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is SEO and how can it benefit my business?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            SEO (Search Engine Optimization) is a technique that helps your website rank higher on
+                            search
+                            engines like Google. By improving your site's visibility, SEO attracts more organic traffic,
+                            which can lead to increased brand awareness, more potential customers, and ultimately,
+                            higher
+                            sales and business growth.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What is the difference between digital marketing and social media marketing?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Digital marketing is a broad term that covers all online marketing strategies, including
+                            SEO,
+                            email marketing, and content marketing. Social media marketing, on the other hand, focuses
+                            specifically on promoting your brand and engaging with your audience on social media
+                            platforms
+                            like Facebook, Instagram, and LinkedIn. Both are essential for a comprehensive digital
+                            strategy.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            What services are included in graphic designing?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Graphic designing services at Apex Digital Agency include logo design, branding materials
+                            (such
+                            as business cards and brochures), website graphics, social media posts, and marketing
+                            collateral. Our team ensures that all design elements are visually appealing and align with
+                            your
+                            brand identity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stay Loop Section  -->
+
+        <div class="container bg-dark text-light rounded mt-5 mb-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-7 px-5">
+                    <h3 class="mt-3">Stay in the loop</h3>
+                    <p style="color: var(--lightpara);">Subscribe to receive the latest news and updates about Apex
+                        Digital.
+                        <br> We promise not to spam
+                        you!
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                    <form id="subscribeForm"
+                        style="display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; width: fit-content; padding: 10px; border-radius: 10px;"
+                        class="bg-light mb-4 mt-4">
+                        <input type="email" name="email" class="border-0 shadow-none form-control bg-light"
+                            placeholder="Enter email address" required>
+                        <button type="submit" class="px-3 py-2 rounded-3">Continue</button>
+                    </form>
+
+                    <!-- (  -----Model-----  ) -->
+
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="myModalLabel">Subscription Successful</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color: gray;">
+                                    Thank you for subscribing to Apex Digital! You will receive updates soon.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="px-3 py-2 rounded-3"
+                                        data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- (  -----Footer-----  ) -->
+
+        <div class="bg-dark text-light pt-5 pb-3 mt-5">
+            <div class="container">
+                <div class=" d-flex justify-content-between flex-wrap align-items-center mb-5">
+                    <div>
+                        <h3 class="mb-3 display-6 fw-bold">About Us</h3>
+                        <p style="color: var(--lightpara);"> <b class="text-light">Apex Digital</b> - the leading
+                            digital
+                            agency <br> based in the UK,
+                            working with top-tier
+                            <br>
+                            clients, from start-ups to enterprises.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="display: flex; flex-wrap: nowrap; align-items: center;">
+                            <i class="bi bi-envelope"></i>
+                            <a href="#" style="text-decoration:none ; color: white;"
+                                class="m-3">info@apexdigital.com</a>
+                        </div>
+                        <div style="display: flex; flex-wrap: nowrap; align-items: center;">
+                            <i class="bi bi-telephone"></i>
+                            <span class="m-3">(001) 1231 3435</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 mt-2">
+                            <a target="_blank" href="https://www.facebook.com/"><i
+                                    class="text-light bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/"><i
+                                    class="text-light bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/"><i
+                                    class="text-light bi bi-linkedin"></i></a>
+                            <a target="_blank" href="https://x.com/en/privacy"><i
+                                    class="text-light bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div>
+                        <a href="index.html" style="margin: 5px; text-decoration:none ; color: white;">Home</a>
+                        <a href="About.html" style="margin: 5px; text-decoration:none ; color: white;">About</a>
+                        <a href="Services.html" style="margin: 5px; text-decoration:none ; color: white;">Services</a>
+                        <a href="Portfolio.html" style="margin: 5px; text-decoration:none ; color: white;">Portfolio</a>
+                        <a href="Contact.html" style="margin: 5px; text-decoration:none ; color: white;">Contact</a>
+                    </div>
+                    <div>
+                        &copy; 2023 Apex-Digital - All Right Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="modelscript.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#subscribeForm').submit(function (e) {
+                e.preventDefault();
+                const emailInput = this.querySelector('input[name="email"]');
+                const email = emailInput.value;
+                if (email) {
+                    const modal = new bootstrap.Modal(document.getElementById('myModal'));
+                    modal.show();
+                    $('#myModal .modal-footer button').on('click', function () {
+                        location.reload();
+                    });
+                } else {
+                    alert('Please enter a valid email address');
+                }
+            });
+
+
+            function handleIntersection(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }
+
+            const options = {
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver(handleIntersection, options);
+
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            $(".fade-in-section").addClass("visible");
+        });
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('#loader').fadeOut('slow', function () {
+                    $('#content').fadeIn('slow');
+                });
+            }, 700);
+        });
+    </script>
+
+</body>
+
+</html>

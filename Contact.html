@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Digital | Contact</title>
+    <link rel="icon" type="image/x-icon" href="src/homeimg/apexfav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .no-brdr,
+        textarea:focus {
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .error {
+            color: red;
+        }
+
+        @media only screen and (max-width:767.5px) {
+            .contact-img {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader" class="loader"></div>
+    <div id="content" style="display: none;">
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg fixed-top  rounded-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div
+                        style="width: 100px; height: 60px; background: url(src/homeimg/apexlogo.svg); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    </div>
+                </a>
+                <button style="background-color: rgb(255, 255, 255); border: none;" class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="About.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Services.html">Services</a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                What we offer
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item ddlink" href="./sub pages/webdesign.html">UI / UX
+                                        Designing</a>
+                                </li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/web development.html">Web
+                                        Development</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/graphics design.html">Graphic
+                                        Designing</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/seo.html">SEO</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/marketing.html">Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Heading and breadcrumb  -->
+
+        <h1 style="color: var(--primary-color); margin-top: 120px;" class="fw-bold text-center">Contact Us</h1>
+        <nav aria-label="breadcrumb" style="display: flex; justify-content: center;">
+            <ol class="breadcrumb" style="display: flex; padding: 0; margin: 0; list-style: none;">
+                <li class="breadcrumb-item" style="display: inline;"><a href="index.html"
+                        style="text-decoration: none; color: var(--primary-color)">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="display: inline;">Contact</li>
+            </ol>
+        </nav>
+        <hr>
+
+        <!-- (-----Talk To Us-----) -->
+
+        <div class="container section mt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-7">
+                    <div class="mt-5" style="background-color: rgb(255, 255, 255); border: none; border-radius: 20px; box-shadow: 20px 20px 60px #f2f2f2,
+                    -20px -20px 60px #ffffff;">
+                        <h2 class="pt-3 mb-4 fw-bold text-center">Let's Talk To Us</h2>
+                        <form id="contact-form">
+                            <div class="mb-4 d-flex justify-content-around flex-wrap">
+                                <div class="mb-3" style="width: 40%;">
+                                    <input type="text" class="no-brdr"
+                                        style="border-bottom: 1px solid gray; width: 100%;" placeholder="Full Name..."
+                                        name="fullname">
+                                </div>
+                                <div class="mb-3" style="width: 40%;">
+                                    <input type="email" class="no-brdr"
+                                        style="border-bottom: 1px solid gray; width: 100%;" placeholder="Your Email..."
+                                        name="mail">
+                                </div>
+                            </div>
+                            <div class="mb-4 d-flex justify-content-around flex-wrap">
+                                <div class="mb-3" style="width: 40%;">
+                                    <input type="number" class="no-brdr"
+                                        style="border-bottom: 1px solid gray; width: 100%;" placeholder="Your Number..."
+                                        name="phone">
+                                </div>
+                                <div class="mb-3 mt-2" style="width: 40%;">
+                                    <select name="services" class="no-brdr"
+                                        style="border-bottom: 1px solid gray; width: 100%; color: gray;">
+                                        <option selected disabled value="select services">Select Services</option>
+                                        <option value="Web design">UI / UX Designing</option>
+                                        <option value="Web development">Web Development</option>
+                                        <option value="Seo">SEO</option>
+                                        <option value="Graphic design">Graphic Design</option>
+                                        <option value="Marketing">Marketing</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3" style="width: 90%; margin: auto;">
+                                <textarea class="no-brdr"
+                                    style="border: .5px solid gray; width: 100%; padding: 5px; border-radius: 5px;"
+                                    rows="4" placeholder="Your message" name="message"></textarea>
+                            </div>
+                            <div class="mb-4 text-end">
+                                <button type="submit" class="mx-5 mb-4 px-3 py-2 rounded-3">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3" style="display: flex; justify-content: center;">
+                    <img src="pic/Untitled (500 x 700 px).png" style="height: 80vh;" class="mt-5 contact-img"
+                        alt="your Browser cannot support this image">
+                </div>
+            </div>
+        </div>
+        <!-- (-----Talk To Us / Modal-----) -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1"
+        aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to submit the form?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary px-3 py-2"
+                        data-bs-dismiss="modal">No</button>
+                    <button type="button" id="confirmSubmit"
+                        class="px-3 py-2 rounded-3">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- (-----Location-----) -->
+
+        <div class="container section mt-5">
+            <div class="row d-flex align-items-center bg-dark rounded-3 p-2">
+                <div class="col-md-3 ">
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-direction:column;">
+                        <img src="pic/location.png" style="width: 50px;padding-right: 10px;border: none;"
+                            alt="picture not found">
+                        <p style="color: var(--lightpara);" class="fw-bold">Aptech north nazimabad campus,karachi
+                            ,pakistan
+                        </p>
+                    </div>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-direction:column;">
+                        <img src="pic/call.png" style="width: 50px;padding-right: 10px;" alt="picture not found">
+                        <p style="color: var(--lightpara);" class="fw-bold">0312-3410983 </p>
+                    </div>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; flex-direction:column;">
+                        <img src="pic/email.png" style="width: 50px;padding-right: 10px;" alt="picture not found">
+                        <p style="color: var(--lightpara);" class="fw-bold">Example@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="map" style="margin-top: 10px;"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.137712000749!2d67.03045847443207!3d24.927378142578426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3389a044f70ff%3A0xf8f7520e8dc7aa52!2sAptech%20Learning%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1720221142106!5m2!1sen!2s"
+                            width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- (  -----Stay in the Loop-----  ) -->
+
+        <div class="container bg-dark text-light rounded mt-5 mb-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-7 px-5">
+                    <h3 class="mt-3">Stay in the loop</h3>
+                    <p style="color: var(--lightpara);">Subscribe to receive the latest news and updates about Apex
+                        Digital.
+                        <br> We promise not to spam you!
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                    <form id="subscribeForm"
+                        style="display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; width: fit-content; padding: 10px; border-radius: 10px;"
+                        class="bg-light mb-4 mt-4">
+                        <input type="email" name="email" class="border-0 shadow-none form-control bg-light"
+                            placeholder="Enter email address" required>
+                        <button type="submit" class="px-3 py-2 rounded-3">Continue</button>
+                    </form>
+
+                    <!-- (  -----Model-----  ) -->
+
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="myModalLabel">Subscription Successful</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color: gray;">
+                                    Thank you for subscribing to Apex Digital! You will receive updates soon.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="px-3 py-2 rounded-3"
+                                        data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- (  -----Footer-----  ) -->
+
+        <div class="bg-dark text-light pt-5 pb-3 mt-5">
+            <div class="container">
+                <div class=" d-flex justify-content-between flex-wrap align-items-center mb-5">
+                    <div>
+                        <h3 class="mb-3 display-6 fw-bold">About Us</h3>
+                        <p style="color: var(--lightpara);"> <b class="text-light">Apex Digital</b> - the leading
+                            digital
+                            agency <br> based in the UK,
+                            working with top-tier
+                            <br>
+                            clients, from start-ups to enterprises.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="display: flex; flex-wrap: nowrap; align-items: center;">
+                            <i class="bi bi-envelope"></i>
+                            <a href="#" style="text-decoration:none ; color: white;"
+                                class="m-3">info@apexdigital.com</a>
+                        </div>
+                        <div style="display: flex; flex-wrap: nowrap; align-items: center;">
+                            <i class="bi bi-telephone"></i>
+                            <span class="m-3">(001) 1231 3435</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 mt-2">
+                            <a target="_blank" href="https://www.facebook.com/"><i
+                                    class="text-light bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/"><i
+                                    class="text-light bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/"><i
+                                    class="text-light bi bi-linkedin"></i></a>
+                            <a target="_blank" href="https://x.com/en/privacy"><i
+                                    class="text-light bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div>
+                        <a href="index.html" style="margin: 5px; text-decoration:none ; color: white;">Home</a>
+                        <a href="About.html" style="margin: 5px; text-decoration:none ; color: white;">About</a>
+                        <a href="Services.html" style="margin: 5px; text-decoration:none ; color: white;">Services</a>
+                        <a href="Portfolio.html" style="margin: 5px; text-decoration:none ; color: white;">Portfolio</a>
+                        <a href="Contact.html" style="margin: 5px; text-decoration:none ; color: white;">Contact</a>
+                    </div>
+                    <div>
+                        &copy; 2023 Apex-Digital - All Right Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        // Validations Script 
+        $(document).ready(function () {
+            // Contact form validation
+            $("#contact-form").validate({
+                rules: {
+                    fullname: {
+                        required: true,
+                        lettersonly: true
+                    },
+                    mail: {
+                        required: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+                        digits: true,
+                        minlength: 11
+                    },
+                    services: "required",
+                    message: {
+                        required: true,
+                        minlength: 20
+                    }
+                },
+                messages: {
+                    fullname: {
+                        required: "Please enter your full name",
+                        lettersonly: "Please enter only letters"
+                    },
+                    mail: {
+                        required: "Please enter your email",
+                        email: "Please enter a valid email address"
+                    },
+                    phone: {
+                        required: "Please enter your phone number",
+                        digits: "Please enter only digits",
+                        minlength: "Please enter a valid phone number with at least 11 digits"
+                    },
+                    services: "Please select a service",
+                    message: {
+                        required: "Please enter a message",
+                        minlength: "Message should be more than 20 words"
+                    }
+                },
+                submitHandler: function (form) {
+                    const modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+                    modal.show();
+                    $("#confirmSubmit").on("click", function () {
+                        modal.hide();
+                        form.submit();
+                    });
+                    return false;
+                }
+            });
+            $.validator.addMethod("lettersonly", function (value, element) {
+                return this.optional(element) || /^[a-zA-Z\s]+$/i.test(value);
+            }, "Please enter only letters");
+
+
+
+            // Subscribe form
+            $('#subscribeForm').submit(function (e) {
+                e.preventDefault();
+                const emailInput = this.querySelector('input[name="email"]');
+                const email = emailInput.value;
+                if (email) {
+                    const modal = new bootstrap.Modal(document.getElementById('myModal'));
+                    modal.show();
+                    $('#myModal .modal-footer button').on('click', function () {
+                        location.reload();
+                    });
+                } else {
+                    alert('Please enter a valid email address');
+                }
+            });
+
+            function handleIntersection(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }
+
+            const options = {
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver(handleIntersection, options);
+
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+
+        });
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('#loader').fadeOut('slow', function () {
+                    $('#content').fadeIn('slow');
+                });
+            }, 700);
+        });
+    </script>
+
+</body>
+
+</html>

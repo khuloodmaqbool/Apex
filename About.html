@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Digital | About Us</title>
+    <link rel="icon" type="image/x-icon" href="src/homeimg/apexfav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .why {
+            padding-bottom: 20px;
+        }
+
+        .why-img {
+            width: 80px;
+            margin-top: 10px;
+        }
+
+        .process,
+        .team-member,
+        .why {
+            box-shadow: 20px 20px 60px #f2f2f2,
+                -20px -20px 60px #ffffff;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .process-num {
+            position: absolute;
+            margin: -0.5% -0.5%;
+            padding: 4px;
+            box-shadow: 2px 2.5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .m-main,
+        .why-main {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .m-img {
+            width: 150px;
+        }
+
+        /* (------Media Query------) */
+
+        @media only screen and (max-width:991.5px) {
+            .process-num {
+                font-size: 20px;
+            }
+
+            .process-title {
+                font-size: 18px;
+            }
+
+            .m-img {
+                width: 100px;
+            }
+
+            .m-body h5 {
+                font-size: 13px;
+            }
+
+            .m-body h6 {
+                font-size: 10px;
+            }
+        }
+
+        @media only screen and (max-width:767.5px) {
+            .m-main .card {
+                margin-top: 20px;
+                width: 200px;
+            }
+
+            .who-h6 {
+                margin-bottom: -30px;
+            }
+
+
+        }
+
+        @media only screen and (max-width:575.5px) {
+            .pro {
+                width: 200px;
+            }
+
+            .process-num {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader" class="loader"></div>
+    <div id="content" style="display: none;">
+
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg fixed-top  rounded-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div
+                        style="width: 100px; height: 60px; background: url(src/homeimg/apexlogo.svg); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                    </div>
+                </a>
+                <button style="background-color: rgb(255, 255, 255); border: none;" class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="About.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Services.html">Services</a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                What we offer
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item ddlink" href="./sub pages/webdesign.html">UI / UX
+                                        Designing</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/web development.html">Web
+                                        Development</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/graphics design.html">Graphic
+                                        Designing</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/seo.html">SEO</a></li>
+                                <li><a class="dropdown-item ddlink" href="./sub pages/marketing.html">Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Heading and breadcrumb  -->
+
+        <h1 style="color: var(--primary-color); margin-top: 120px;" class="fw-bold text-center">About Us</h1>
+        <nav aria-label="breadcrumb" style="display: flex; justify-content: center;">
+            <ol class="breadcrumb" style="display: flex; padding: 0; margin: 0; list-style: none;">
+                <li class="breadcrumb-item" style="display: inline;"><a href="index.html"
+                        style="text-decoration: none; color: var(--primary-color)">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="display: inline;">About</li>
+            </ol>
+        </nav>
+        <hr>
+
+        <!-- (  -----Who we are-----  ) -->
+        <div class="container section f-w mt-5">
+            <div class="row ">
+                <div class="col-sm-12 col-md-5 col-lg-5 who-1">
+                    <img src="pic/test4.png" class="img-fluid who-img mt-3" alt="your browser don't suport this image!">
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7 who-2">
+                    <h6 class="who-h6 mt-3">Who We Are!!!</h6>
+                    <h5 class="outlineheading text-left text-white">WHO?</h5>
+                    <h2 class="text-left fw-bold">We are
+                        <span style="color: var(--primary-color);">Digital Agency</span>
+                    </h2>
+                    <p>We are a dynamic digital marketing agency specializing in innovative
+                        strategies to amplify your brand's online presence. Our expert team
+                        excels in SEO, social media marketing, and creative content solutions.
+                        Partner with us to drive growth and achieve measurable success.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- (  -----Why Choose Us-----  ) -->
+        <div class="text-center mt-5 mb-5">
+            <h5 class="outlineheading text-center text-white">WHY?</h5>
+            <h2 class="text-center fw-bold">Why
+                <span style="color: var(--primary-color);">Choose Us</span>
+            </h2>
+        </div>
+        <div style="background: url(src/homeimg/map\ image.svg); background-size: contain; background-repeat: no-repeat; background-position: center;"
+            class="container section mb-5">
+            <div class="row why-main">
+                <div class="card col-7 col-xl-3 col-xxl-3 col-sm-5  col-md-5 col-lg-3 why mt-4 ">
+                    <img class="why-img mx-auto" src="pic/WHY CHOOSE US.png"
+                        alt="your browser don't suport this image!">
+                    <h6 class="mt-3 fw-bold why-h text-center">Customer-Centric Approach</h6>
+                    <p class="text-center px-2" style="margin-top: 20px;">
+                        Your satisfaction is our top
+                        priority. We value open
+                        communication and transparency,
+                        ensuring you&#39;re involved and
+                        informed at every stage of
+                        the project.</p>
+                </div>
+                <div class="card col-7 col-xl-3 col-xxl-3 col-sm-5  col-md-5 col-lg-3 why mt-4  ">
+                    <img class="why-img mx-auto" src="pic/Twitter post - 2.png"
+                        alt="your browser don't suport this image!">
+                    <h6 class="mt-3 fw-bold why-h text-center">Dedicated Team Members</h6>
+                    <p class="text-center px-2" style="margin-top: 20px;">
+                        Our dedicated team of
+                        professionals is committed to
+                        your success. We work closely
+                        with you from concept to
+                        completion, ensuring a seamless
+                        and collaborative process.</p>
+                </div>
+                <div class="card col-7 col-xl-3 col-xxl-3 col-sm-5 col-md-5 col-lg-3 why mt-4 ">
+                    <img class="why-img mx-auto" src="pic/Twitter post - 3.png"
+                        alt="your browser don't suport this image!">
+                    <h6 class="mt-3 fw-bold why-h text-center">Expertise & Innovation</h6>
+                    <p class="text-center px-2" style="margin-top: 20px;">
+                        We combine industry expertise
+                        with innovative approaches to
+                        deliver cutting-edge digital
+                        solutions. Our team stays
+                        ahead of trends, ensuring your
+                        project is both modern and
+                        effective.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- (  -----Have a Project in mind-----  ) -->
+
+        <div class="container section">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-md-8 col-lg-8 mind-1">
+                    <h2 class="fw-bold mt-4 mind-h"> Have a project <span style="color: var(--primary-color);">in
+                            mind?</span></h2>
+                    <p class="mt-3">Let&#39;s bring your vision to life. Contact us today to discuss how we can help you
+                        achieve
+                        your goals with our expert digital solutions. Whether it&#39;s building a stunning website,
+                        optimizing
+                        your online presence, or creating a seamless user experience, we&#39;re here to turn your ideas
+                        into
+                        reality. Let&#39;s connect and explore the possibilities!
+                    </p>
+                    <a href="Contact.html"><button class="px-3 py-2  mt-4 rounded-3">
+                            Contact Us
+                            <i class="bi bi-arrow-right"></i>
+                        </button></a>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mind-2">
+                    <img src="pic/test5.png" class="img-fluid" alt="your browser don't suport this image!">
+                </div>
+            </div>
+        </div>
+
+        <!-- (  -----Process-----  ) -->
+
+        <div class="text-center mt-5 mb-5">
+            <h5 class="outlineheading text-center text-white">PROCESS</h5>
+            <h2 class="text-center fw-bold">Our Development
+                <span style="color: var(--primary-color);">Process</span>
+            </h2>
+        </div>
+        <div class="container section mt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 d-flex flex-wrap justify-content-around">
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-3 d-flex pro justify-content-center flex-column align-items-center">
+                        <div class="rounded-circle process" style="width: fit-content;">
+                            <div class="rounded-circle border-1 fw-bold process-num display-6 bg-light"
+                                style="color: var(--primary-color);">
+                                01</div>
+                            <img src="pic/discover.png" class="img-fluid" alt="your browser don't suport this image!">
+                        </div>
+                        <div class="h4 mt-3 mb-5 process-title">
+                            Discover
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-3 d-flex pro justify-content-center flex-column align-items-center">
+                        <div class="rounded-circle process" style="width: fit-content;">
+                            <div class="rounded-circle border-1 fw-bold process-num display-6 bg-light"
+                                style="color: var(--primary-color);">
+                                02</div>
+                            <img src="pic/how we work1 (2).png" class="img-fluid"
+                                alt="your browser don't suport this image!">
+                        </div>
+                        <div class="h4 mt-3 mb-5 process-title">
+                            Design
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 d-flex flex-wrap justify-content-around">
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-3 d-flex pro justify-content-center flex-column align-items-center">
+                        <div class="rounded-circle process" style="width: fit-content;">
+                            <div class="rounded-circle border-1 fw-bold process-num display-6 bg-light"
+                                style="color: var(--primary-color);">
+                                03</div>
+                            <img src="pic/how we work1 (3).png" class="img-fluid"
+                                alt="your browser don't suport this image!">
+                        </div>
+                        <div class="h4 mt-3 mb-5 process-title">
+                            Build
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-3 d-flex pro justify-content-center flex-column align-items-center">
+                        <div class="rounded-circle process" style="width: fit-content;">
+                            <div class="rounded-circle border-1 fw-bold process-num display-6 bg-light"
+                                style="color: var(--primary-color);">
+                                04</div>
+                            <img src="pic/how we work1 (4).png" class="img-fluid"
+                                alt="your browser don't suport this image!">
+                        </div>
+                        <div class="h4 mt-3 mb-5 process-title">
+                            Delivered
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- (-----Members-----) -->
+
+        <div class="text-center mt-5 mb-5">
+            <h5 class="outlineheading text-center text-white">TEAM</h5>
+            <h2 class="text-center fw-bold">Our Team
+                <span style="color: var(--primary-color);">Members</span>
+            </h2>
+        </div>
+        <div style="background: url(src/homeimg/map\ image.svg); background-size: contain; background-repeat: no-repeat; background-position: center;"
+            class="container section">
+
+            <div class="row m-main">
+                <div class="card col-sm-12 col-md-3 col-lg-3 team-member" style="border: none;">
+                    <img src="pic/team (1).png" class="card-img-top mt-3 m-img img-fluid rounded-circle"
+                        style="margin: auto;" alt="your browser don't suport this image!">
+                    <div class="card-body m-body">
+                        <h5 class="card-title fw-bold text-center">John Diego</h5>
+                        <h6 class="card-text text-center">CEO</h6>
+                        <p class="card-text text-center">With over 10 years of experience, Lucas leads our team in
+                            crafting unique digital experiences. His expertise in visual storytelling ensures every
+                            project stands out
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-3 col-lg-3 team-member" style="border: none;">
+                    <img src="pic/team (3).png" class="card-img-top mt-3 m-img img-fluid rounded-circle"
+                        style="margin: auto;" alt="your browser don't suport this image!">
+                    <div class="card-body m-body">
+                        <h5 class="card-title fw-bold text-center">Matteo Rossi</h5>
+                        <h6 class="card-text text-center">Lead Developer</h6>
+                        <p class="card-text text-center">Matteo brings technical knowledge and dedication to coding
+                            excellence. He&#39;s always ready to tackle complex challenges and deliver high-quality
+                            solutions.
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-3 col-lg-3 team-member" style="border: none;">
+                    <img src="pic/team (2).png" class="card-img-top mt-3 m-img img-fluid rounded-circle"
+                        style="margin: auto;" alt="your browser don't suport this image!">
+                    <div class="card-body m-body">
+                        <h5 class="card-title fw-bold text-center">Elena Petrova</h5>
+                        <h6 class="card-text text-center">Project Manager</h6>
+                        <p class="card-text text-center">Elena is our organized Project Manager, keeping projects on
+                            track and meeting every deadline with exceptional communication and coordination skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- (  -----Stay in the Loop-----  ) -->
+
+        <div class="container bg-dark text-light rounded mt-5 mb-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-7 px-5">
+                    <h3 class="mt-3">Stay in the loop</h3>
+                    <p style="color: var(--lightpara);">Subscribe to receive the latest news and updates about Apex
+                        Digital. <br> We promise not to spam you!</p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                    <form id="subscribeForm"
+                        style="display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; width: fit-content; padding: 10px; border-radius: 10px;"
+                        class="bg-light mb-4 mt-4">
+                        <input type="email" name="email" class="border-0 shadow-none form-control bg-light"
+                            placeholder="Enter email address" required>
+                        <button type="submit" class="px-3 py-2 rounded-3">Continue</button>
+                    </form>
+
+                    <!-- (  -----Model-----  ) -->
+
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="myModalLabel">Subscription Successful</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="color: gray;">
+                                    Thank you for subscribing to Apex Digital! You will receive updates soon.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="px-3 py-2 rounded-3"
+                                        data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- (  -----Footer-----  ) -->
+
+        <div class="bg-dark text-light pt-5 pb-3 mt-5">
+            <div class="container">
+                <div class=" d-flex justify-content-between flex-wrap align-items-center mb-5">
+                    <div>
+                        <h3 class="mb-3 display-6 fw-bold">About Us</h3>
+                        <p style="color: var(--lightpara);"> <b class="text-light">Apex Digital</b> - the leading
+                            digital agency <br> based in the UK,
+                            working with top-tier
+                            <br>
+                            clients, from start-ups to enterprises.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="display: flex; flex-wrap: nowrap; align-items: center;">
+                            <i class="bi bi-envelope"></i>
+                            <a href="#" style="text-decoration:none ; color: white;"
+                                class="m-3">info@apexdigital.com</a>
+                        </div>
+                        <div style="display: flex; flex-wrap: nowrap; align-items: center;">
+                            <i class="bi bi-telephone"></i>
+                            <span class="m-3">(001) 1231 3435</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 mt-2">
+                            <a target="_blank" href="https://www.facebook.com/"><i
+                                    class="text-light bi bi-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/"><i
+                                    class="text-light bi bi-instagram"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/"><i
+                                    class="text-light bi bi-linkedin"></i></a>
+                            <a target="_blank" href="https://x.com/en/privacy"><i
+                                    class="text-light bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div>
+                        <a href="index.html" style="margin: 5px; text-decoration:none ; color: white;">Home</a>
+                        <a href="About.html" style="margin: 5px; text-decoration:none ; color: white;">About</a>
+                        <a href="Services.html" style="margin: 5px; text-decoration:none ; color: white;">Services</a>
+                        <a href="Portfolio.html" style="margin: 5px; text-decoration:none ; color: white;">Portfolio</a>
+                        <a href="Contact.html" style="margin: 5px; text-decoration:none ; color: white;">Contact</a>
+                    </div>
+                    <div>
+                        &copy; 2023 Apex-Digital - All Right Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#subscribeForm').submit(function (e) {
+                e.preventDefault();
+                const emailInput = this.querySelector('input[name="email"]');
+                const email = emailInput.value;
+                if (email) {
+                    const modal = new bootstrap.Modal(document.getElementById('myModal'));
+                    modal.show();
+                    $('#myModal .modal-footer button').on('click', function () {
+                        location.reload();
+                    });
+                } else {
+                    alert('Please enter a valid email address');
+                }
+            });
+
+            function handleIntersection(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }
+
+            const options = {
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver(handleIntersection, options);
+
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $('#loader').fadeOut('slow', function () {
+                    $('#content').fadeIn('slow');
+                });
+            }, 700);
+        });
+    </script>
+</body>
+
+</html>
